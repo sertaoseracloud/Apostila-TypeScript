@@ -12,9 +12,9 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 [Linkedin](https://www.linkedin.com/in/cfraposo/)
 
 ## Capítulos
-0. [Capítulo 0](CAP00.md)
-1. [Capítulo 1](CAP01.md)
-2. [Capítulo 2](CAP02.md)
+0. [Capítulo 0: O que é JavaScript](CAP00.md)
+1. [Capítulo 1: Introdução ao TypeScript e Configuração do Ambiente](CAP01.md)
+2. [Capítulo 2: Sintaxe e Tipagem em TypeScript](CAP02.md)
 
 ## Licença
 
