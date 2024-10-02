@@ -16,6 +16,9 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 1. [Capítulo 1: Introdução ao TypeScript e Configuração do Ambiente](CAP01.md)
 2. [Capítulo 2: Sintaxe e Tipagem em TypeScript](CAP02.md)
 
+## Projetos Práticos
+1. [Pedra, Papel e Tesoura](PROJ01.md)
+
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
