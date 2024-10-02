@@ -4,6 +4,11 @@
 
 TypeScript é uma linguagem que expande o JavaScript adicionando tipagem estática. Essa tipagem permite aos desenvolvedores especificar os tipos de variáveis, funções e objetos, resultando em código mais seguro e fácil de manter. A sintaxe do TypeScript é semelhante à do JavaScript, mas com recursos adicionais que ajudam a trabalhar com tipos de dados.
 
+- **Para assistir**: Aqui vai alguns videos para complementar o conhecimento:
+
+[Módulo B - Variáveis Primitivas - Cursos em Video](https://www.youtube.com/watch?v=Vbabsye7mWo&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=9)
+[Type x Interface - Mateus Durães](https://www.youtube.com/watch?v=s9qgTlpYDuA)
+
 ## 2.2 Tipos Básicos
 
 TypeScript oferece vários tipos básicos que podem ser utilizados para definir variáveis e funções:

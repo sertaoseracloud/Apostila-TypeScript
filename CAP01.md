@@ -4,6 +4,10 @@
 
 O **TypeScript** é uma linguagem de programação criada pela Microsoft, que estende o JavaScript adicionando **tipagem estática**. Enquanto o JavaScript permite a execução de código sem verificar erros de tipo, o TypeScript detecta esses erros **antes da execução**, na fase de compilação. Isso traz benefícios como maior **segurança**, **previsibilidade** e **facilidade de manutenção** no desenvolvimento de software.
 
+- **Para assistir**: Aqui vai alguns videos para complementar o conhecimento:
+
+[TypeScript em 15 minutos direto ao ponto! - LuizTools](https://www.youtube.com/watch?v=g0hkeyMb45U)
+
 ### Vantagens do TypeScript:
 - **Tipagem Estática**: Erros de tipos são detectados antes da execução.
 - **Autocompletar aprimorado**: Editores como o Visual Studio Code oferecem sugestões de código mais inteligentes e precisas.

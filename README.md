@@ -1,6 +1,6 @@
 # Índice de Capítulos sobre TypeScript 1.0
 
-Este documento lista todos os capítulos do projeto. Primeira atividade é clicar na estrelinha e segundo criar um fork para mostrar que você conseguiu fazer.
+Este documento lista todos os capítulos do projeto. Primeira atividade é clicar na estrelinha e segundo criar um fork do projeto, assim conseguirei ver quem está acompanhando o material.
 
 ## Professor
 Professor Universitário na UniAnchieta | Software Architect at CI&T | Microsoft MVP| Microsoft MCT | React | React Native | Node | Angular | Springboot | Kotlin | Swift | Tech Lead |12x Msft Certified | 2x AWS Certified

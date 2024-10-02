@@ -4,6 +4,10 @@
 
 **JavaScript** é uma linguagem de programação de alto nível, amplamente utilizada para o desenvolvimento web. Criada por Brendan Eich em 1995, JavaScript é uma das três principais tecnologias da web, juntamente com HTML (HyperText Markup Language) e CSS (Cascading Style Sheets). Enquanto HTML estrutura o conteúdo de uma página e o CSS estiliza a aparência, o JavaScript permite adicionar interatividade e dinamismo.
 
+- **Para assistir**: Aqui vai alguns videos para complementar o conhecimento:
+
+[Módulo A - Cursos em Videos](https://www.youtube.com/watch?v=uzEhd3Lugik&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=3): Assistir todo Módulo A
+
 ### Características do JavaScript:
 
 - **Linguagem de Script**: JavaScript é frequentemente utilizado como uma linguagem de script do lado do cliente, permitindo que os desenvolvedores criem experiências interativas em navegadores sem a necessidade de recarregar a página.
