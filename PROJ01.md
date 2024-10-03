@@ -1,4 +1,4 @@
-### Criando um Jogo de Pedra, Papel e Tesoura com HTML, CSS e TypeScript: Um Guia para Iniciantes
+### Criando um Jogo de Pedra, Papel e Tesoura com HTML, CSS e TypeScript
 
 Neste artigo, vamos aprender a criar um simples jogo de Pedra, Papel e Tesoura usando HTML, CSS e TypeScript. Este projeto é perfeito para iniciantes que desejam praticar suas habilidades de programação web e entender como integrar diferentes tecnologias. Vamos passar por cada parte do projeto, explicando o que estamos fazendo e por quê.
 
