@@ -140,7 +140,7 @@ function generateSequence() {
 
 // Função para exibir a sequência para o jogador
 function displaySequence() {
-    messageDisplay.textContent = `Nível ${level}: ${sequence.join(', ')}`;
+    messageDisplay.textContent = `Nível ${level}`;
     let index = 0;
     const interval = setInterval(() => {
         if (index < sequence.length) {
