@@ -19,6 +19,7 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 ## Projetos Práticos
 1. [Pedra, Papel e Tesoura](PROJ01.md)
 2. [Jogo Nexus com Cores](PROJ02.md)
+3. [Simulador de Semáforo](PROJ03.md)
 
 ## Licença
 
