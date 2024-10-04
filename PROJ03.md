@@ -198,19 +198,14 @@ Isso gera o arquivo `script.js` na pasta `dist`, que será usado no HTML.
 Agora que você construiu um simulador de semáforo, é hora de refletir sobre o que aprendeu. Aqui estão algumas perguntas para guiar sua reflexão:
 
 1. **Como o `enum` ajuda a organizar os estados do semáforo?**
-   - O `enum` facilita a alternância entre os estados, melhorando a legibilidade do código.
   
 2. **Por que o `setInterval` é útil neste projeto?**
-   - O `setInterval` é usado para criar um loop de tempo que alterna as cores automaticamente, simulando o ciclo de um semáforo real.
 
 3. **O que acontece se mudarmos o tempo do `setInterval`?**
-   - Se alterarmos o valor de `3000` (3 segundos), as cores mudarão mais rápido ou mais devagar, dependendo do valor escolhido.
 
 4. **Como o uso das classes `active` e do CSS ajuda a alterar a aparência das luzes sem modificar o HTML diretamente?**
-   - Ao alternar a classe `active`, podemos mudar a opacidade das luzes e controlar quais estão "acesas" apenas com CSS, mantendo o HTML limpo.
 
 5. **Como você poderia expandir este projeto?**
-   - Você poderia adicionar um botão de "Pause", reiniciar o ciclo ou até mesmo criar um painel de controle para simular diferentes cenários de trânsito.
 
 ---
 
