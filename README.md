@@ -15,11 +15,15 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 0. [Capítulo 0: O que é JavaScript](CAP00.md)
 1. [Capítulo 1: Introdução ao TypeScript e Configuração do Ambiente](CAP01.md)
 2. [Capítulo 2: Sintaxe e Tipagem em TypeScript](CAP02.md)
+3. [Capitulo 3: Funções e Classes em TypeScript](CAP03.md)
 
 ## Projetos Práticos
 1. [Pedra, Papel e Tesoura](PROJ01.md)
 2. [Jogo Nexus com Cores](PROJ02.md)
 3. [Simulador de Semáforo](PROJ03.md)
+
+## Trabalho Final
+[Trabalho final](TRABALHO_FINAL.md)
 
 ## Licença
 
