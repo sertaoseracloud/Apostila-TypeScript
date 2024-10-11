@@ -18,6 +18,11 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 3. [Capitulo 3: Funções e Classes em TypeScript](CAP03.md)
 4. [Capitulo 4: Módulos e Namespaces em TypeScript](CAP04.md)
 
+## Aula de Reposição
+1. [Reposição 1: Criando uma API com Node.js, Prisma e SQLite (Sem Express)](REPO01.md)
+2. [Reposição 2: Criando uma API com Node.js, Prisma e SQLite Usando Express](REPO02.md)
+3. [Reposição 3: Criando uma API com NestJS, Prisma e SQLite](REPO03.md)
+
 ## Projetos Práticos
 1. [Pedra, Papel e Tesoura](PROJ01.md)
 2. [Jogo Nexus com Cores](PROJ02.md)
