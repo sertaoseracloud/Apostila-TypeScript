@@ -19,6 +19,9 @@ npx tsc --init
 ```
 
 Em seguida, configure o Prisma e o SQLite criando o arquivo `prisma/schema.prisma`:
+```bash
+npx prisma init --datasource-provider sqlite
+```
 
 ```prisma
 generator client {
@@ -43,7 +46,6 @@ Agora, execute os seguintes comandos para criar o banco de dados e gerar o clien
 
 ```bash
 npx prisma migrate dev --name init
-npx prisma generate
 ```
 
 #### 2. Criando a API com Express
