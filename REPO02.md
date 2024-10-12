@@ -8,8 +8,8 @@ Primeiro, crie um novo projeto Node.js e instale as dependências necessárias:
 
 ```bash
 npm init -y
-npm install express prisma @prisma/client
-npm install typescript ts-node @types/node @types/express --save-dev
+npm install express 
+npm install typescript prisma ts-node @types/node @types/express --save-dev
 ```
 
 Depois, inicialize o TypeScript criando o `tsconfig.json`:
