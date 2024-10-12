@@ -55,7 +55,7 @@ Agora, crie um servidor simples usando Node.js com a API HTTP nativa. Não utili
 Crie o arquivo `src/server.ts` com o seguinte conteúdo:
 
 ```ts
-import { createServer, IncomingMessage, ServerResponse } from 'http';
+import { createServer, IncomingMessage, ServerResponse } from 'node:http';
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
@@ -64,8 +64,9 @@ const requestHandler = async (req: IncomingMessage, res: ServerResponse) => {
   if (req.method === 'GET' && req.url === '/users') {
     const users = await prisma.user.findMany();
     res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify(users));
-  } else if (req.method === 'POST' && req.url === '/users') {
+    return res.end(JSON.stringify(users));
+  } 
+  if (req.method === 'POST' && req.url === '/users') {
     let body = '';
     req.on('data', (chunk: Buffer) => {
       body += chunk.toString();
@@ -76,9 +77,9 @@ const requestHandler = async (req: IncomingMessage, res: ServerResponse) => {
         data: { name, email },
       });
       res.writeHead(201, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify(newUser));
+      return res.end(JSON.stringify(newUser));
     });
-  } else {
+  } 
     res.writeHead(404, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({ message: 'Rota não encontrada' }));
   }
