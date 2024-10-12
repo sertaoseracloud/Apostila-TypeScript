@@ -19,6 +19,10 @@ npx tsc --init
 
 Agora, crie o arquivo `prisma/schema.prisma` para configurar o Prisma e definir o modelo de usuário:
 
+```bash
+npx prisma init --datasource-provider sqlite
+```
+
 ```prisma
 generator client {
   provider = "prisma-client-js"
