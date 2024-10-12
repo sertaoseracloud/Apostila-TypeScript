@@ -25,6 +25,9 @@ npx prisma init
 ```
 
 Atualize o arquivo `prisma/schema.prisma` com a configuração do banco de dados **SQLite** e o modelo de usuário:
+```bash
+npx prisma init --datasource-provider sqlite
+```
 
 ```prisma
 generator client {
@@ -49,7 +52,6 @@ Após configurar o schema, rode as migrações e gere o cliente Prisma:
 
 ```bash
 npx prisma migrate dev --name init
-npx prisma generate
 ```
 
 #### 2. Configurando o Prisma no NestJS
