@@ -68,17 +68,16 @@ const requestHandler = async (req: IncomingMessage, res: ServerResponse) => {
   } 
   if (req.method === 'POST' && req.url === '/users') {
     let body = '';
-    req.on('data', (chunk: Buffer) => {
-      body += chunk.toString();
-    });
-    req.on('end', async () => {
+     for await (const chunk of req) {
+        body += chunk;
+      }
+
       const { name, email } = JSON.parse(body);
       const newUser = await prisma.user.create({
         data: { name, email },
       });
       res.writeHead(201, { 'Content-Type': 'application/json' });
       return res.end(JSON.stringify(newUser));
-    });
   } 
     res.writeHead(404, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({ message: 'Rota não encontrada' }));
