@@ -20,13 +20,11 @@ npm install --save-dev prisma
 Inicialize o Prisma e crie o arquivo `prisma/schema.prisma`:
 
 ```bash
-npx prisma init
+npx prisma init --datasource-provider sqlite
 ```
 
 Atualize o arquivo `prisma/schema.prisma` com a configuração do banco de dados **SQLite** e o modelo de usuário:
-```bash
-npx prisma init --datasource-provider sqlite
-```
+
 
 ```prisma
 generator client {
@@ -58,6 +56,9 @@ npx prisma migrate dev --name init
 Vamos integrar o Prisma ao NestJS. Crie um módulo `PrismaModule` e um serviço `PrismaService` para encapsular a lógica de acesso ao banco de dados.
 
 - **src/prisma/prisma.module.ts**:
+- ```bash
+nest generate module prisma
+```
 
 ```ts
 import { Module } from '@nestjs/common';
@@ -71,7 +72,9 @@ export class PrismaModule {}
 ```
 
 - **src/prisma/prisma.service.ts**:
-
+- ```bash
+nest generate module prisma
+```
 ```ts
 import { Injectable, OnModuleInit, OnModuleDestroy } from '@nestjs/common';
 import { PrismaClient } from '@prisma/client';
@@ -88,6 +91,9 @@ export class PrismaService extends PrismaClient
 Aqui, o `PrismaService` é um serviço que conecta e desconecta do banco de dados conforme o ciclo de vida do módulo.
 
 #### 3. Criando o CRUD de Usuários
+- ```bash
+nest generate resource user
+```
 
 Agora vamos criar o módulo `UsersModule`, o `UsersService`, e o `UsersController` para implementar o CRUD da API.
 
@@ -107,75 +113,106 @@ import { PrismaModule } from '../prisma/prisma.module';
 export class UsersModule {}
 ```
 
+- **src/users/dto/create-user.dto.ts**:
+```ts
+export class CreateUserDto {
+  id: number;
+  name: string;
+  email: string;
+}
+```
+
 - **src/users/users.service.ts**:
 
 ```ts
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
-import { User } from '@prisma/client';
+import { CreateUserDto } from './dto/create-user.dto';
+import { UpdateUserDto } from './dto/update-user.dto';
+import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
-export class UsersService {
-  constructor(private prisma: PrismaService) {}
-
-  async getAllUsers(): Promise<User[]> {
-    return this.prisma.user.findMany();
-  }
-
-  async createUser(name: string, email: string): Promise<User> {
-    return this.prisma.user.create({
-      data: {
-        name,
-        email,
-      },
+export class UserService {
+  constructor(private readonly prisma: PrismaService) {}
+  async create(createUserDto: CreateUserDto) {
+    const { name, email } = createUserDto;
+    return await this.prisma.user.create({
+      data: { name, email },
     });
   }
 
-  async updateUser(id: number, name: string, email: string): Promise<User> {
-    return this.prisma.user.update({
+  async findAll() {
+    return await this.prisma.user.findMany();
+  }
+
+  async findOne(id: number) {
+    return await this.prisma.user.findUnique({
+      where: { id },
+    });
+  }
+
+  async update(id: number, updateUserDto: UpdateUserDto) {
+    const { name, email } = updateUserDto;
+    return await this.prisma.user.update({
       where: { id },
       data: { name, email },
     });
   }
 
-  async deleteUser(id: number): Promise<void> {
+  async remove(id: number) {
     await this.prisma.user.delete({
       where: { id },
     });
   }
 }
+
 ```
 
 - **src/users/users.controller.ts**:
 
 ```ts
-import { Controller, Get, Post, Put, Delete, Body, Param } from '@nestjs/common';
-import { UsersService } from './users.service';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
+import { UserService } from './user.service';
+import { CreateUserDto } from './dto/create-user.dto';
+import { UpdateUserDto } from './dto/update-user.dto';
 
 @Controller('users')
-export class UsersController {
-  constructor(private readonly usersService: UsersService) {}
-
-  @Get()
-  getAllUsers() {
-    return this.usersService.getAllUsers();
-  }
+export class UserController {
+  constructor(private readonly userService: UserService) {}
 
   @Post()
-  createUser(@Body() body: { name: string, email: string }) {
-    return this.usersService.createUser(body.name, body.email);
+  create(@Body() createUserDto: CreateUserDto) {
+    return this.userService.create(createUserDto);
   }
 
-  @Put(':id')
-  updateUser(@Param('id') id: string, @Body() body: { name: string, email: string }) {
-    return this.usersService.updateUser(+id, body.name, body.email);
+  @Get()
+  findAll() {
+    return this.userService.findAll();
+  }
+
+  @Get(':id')
+  findOne(@Param('id') id: string) {
+    return this.userService.findOne(+id);
+  }
+
+  @Patch(':id')
+  update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
+    return this.userService.update(+id, updateUserDto);
   }
 
   @Delete(':id')
-  deleteUser(@Param('id') id: string) {
-    return this.usersService.deleteUser(+id);
+  remove(@Param('id') id: string) {
+    return this.userService.remove(+id);
   }
 }
+
 ```
 
 Nesse código, implementamos as rotas:
