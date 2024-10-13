@@ -14,7 +14,6 @@ nest new user-api
 Após o projeto ser criado, instale as dependências do Prisma:
 
 ```bash
-npm install @prisma/client
 npm install --save-dev prisma
 ```
 
