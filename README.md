@@ -17,6 +17,8 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 2. [Capítulo 2: Sintaxe e Tipagem em TypeScript](CAP02.md)
 3. [Capitulo 3: Funções e Classes em TypeScript](CAP03.md)
 4. [Capitulo 4: Módulos e Namespaces em TypeScript](CAP04.md)
+5. [Capitulo 5: Manipulação de DOM com TypeScript](CAP05.md)
+6. [Capitulo 6: Comunicação HTTP em Aplicações Web com TypeScript](CAP06.md)
 
 ## Aula de Reposição
 1. [Reposição 1: Criando uma API com Node.js, Prisma e SQLite (Sem Express)](REPO01.md)
@@ -27,6 +29,8 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 1. [Pedra, Papel e Tesoura](PROJ01.md)
 2. [Jogo Nexus com Cores](PROJ02.md)
 3. [Simulador de Semáforo](PROJ03.md)
+4. [Jogo da Cobra com Orientação a Objetos em TypeScript](PROJ04.md)
+5. [Projeto de Batalha Estilo Pokémon com TypeScript](PROJ05.md)
 
 ## Trabalho Final
 [Trabalho final](TRABALHO_FINAL.md)
