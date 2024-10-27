@@ -19,6 +19,7 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 4. [Capitulo 4: Módulos e Namespaces em TypeScript](CAP04.md)
 5. [Capitulo 5: Manipulação de DOM com TypeScript](CAP05.md)
 6. [Capitulo 6: Comunicação HTTP em Aplicações Web com TypeScript](CAP06.md)
+7. [Capítulo 7: Introdução ao ReactJS](CAP07.md)
 
 ## Aula de Reposição
 1. [Reposição 1: Criando uma API com Node.js, Prisma e SQLite (Sem Express)](REPO01.md)
@@ -31,6 +32,7 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 3. [Simulador de Semáforo](PROJ03.md)
 4. [Jogo da Cobra com Orientação a Objetos em TypeScript](PROJ04.md)
 5. [Projeto de Batalha Estilo Pokémon com TypeScript](PROJ05.md)
+6. [TODO List com React TypeScript e Bootstrap](PROJ06.md)
 
 ## Trabalho Final
 [Trabalho final](TRABALHO_FINAL.md)
