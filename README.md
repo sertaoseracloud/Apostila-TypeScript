@@ -22,6 +22,7 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 7. [Capítulo 7: Introdução ao ReactJS](CAP07.md)
 8. [Capítulo 8: Utilizando useState com TypeScript: Um Guia Completo](CAP08.md)
 9. [Capítulo 9: Gerenciando o Ciclo de Vida de Componentes com useEffect e TypeScript](CAP09.md)
+10. [Capítulo 10: Criando uma Todo List com Vue.js](CAP10.md)
 
 ## Aula de Reposição
 1. [Reposição 1: Criando uma API com Node.js, Prisma e SQLite (Sem Express)](REPO01.md)
@@ -35,6 +36,7 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 4. [Jogo da Cobra com Orientação a Objetos em TypeScript](PROJ04.md)
 5. [Projeto de Batalha Estilo Pokémon com TypeScript](PROJ05.md)
 6. [TODO List com React TypeScript e Bootstrap](PROJ06.md)
+7. [Criando uma Pokedex com Vue.js e Bootstrap Grid](PROJ07.md)
 
 ## Trabalho Final
 [Trabalho final](TRABALHO_FINAL.md)
