@@ -23,6 +23,7 @@ Autor dos livros "NestJS, Do Zero até a primeira API" "Criptomoedas: Um Resumo 
 8. [Capítulo 8: Utilizando useState com TypeScript: Um Guia Completo](CAP08.md)
 9. [Capítulo 9: Gerenciando o Ciclo de Vida de Componentes com useEffect e TypeScript](CAP09.md)
 10. [Capítulo 10: Criando uma Todo List com Vue.js](CAP10.md)
+11. [Capítulo 11: Construindo uma Aplicação de Todo List com Angular e Bootstrap](CAP11.md)
 
 ## Aula de Reposição
 1. [Reposição 1: Criando uma API com Node.js, Prisma e SQLite (Sem Express)](REPO01.md)
